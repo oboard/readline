@@ -105,7 +105,7 @@ fn main {
 
 ## Implementation Details
 
-- **JavaScript**: Uses `prompt()` for browser environments and `readline` module for Node.js
+- **JavaScript**: Uses `prompt()` for browser environments and `stdin/stdout` for Node.js
 - **Native**: Uses standard C `scanf()` and `printf()` functions
 
 ## License
