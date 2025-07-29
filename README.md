@@ -1,14 +1,14 @@
 # oboard/readline
 
-A cross-platform readline library for MoonBit that provides interactive input functionality across JavaScript, Native targets.
+A readline library for MoonBit
 
 ## Features
 
-- 🌐 **Cross-platform**: Works on JavaScript, Native (C) targets
 - 🔄 **Callback-based**: Asynchronous input handling with callback functions
 - 🧹 **Resource management**: Proper cleanup with `close()` method
 - 📝 **Simple API**: Easy-to-use interface for interactive console applications
 - 🚀 **Zero dependencies**: Lightweight implementation using only standard libraries
+- 🌐 **Cross-platform**: Works on JavaScript, Native (C) targets
 
 ## Installation
 
