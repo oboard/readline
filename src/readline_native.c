@@ -26,12 +26,18 @@ char *question_ffi_internal(char *question) {
     printf("%s", question);
     fflush(stdout);
     
-    // Read user input
-    if (scanf("%s", buffer) == 1) {
+    // Read user input (including spaces)
+    if (fgets(buffer, MAX_INPUT_SIZE, stdin) != NULL) {
+        // Remove trailing newline if present
+        size_t len = strlen(buffer);
+        if (len > 0 && buffer[len - 1] == '\n') {
+            buffer[len - 1] = '\0';
+        }
         return buffer;
     } else {
         // Handle EOF or error cases
-        return "";
+        buffer[0] = '\0';
+        return buffer;
     }
 }
 

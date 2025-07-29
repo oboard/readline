@@ -16,7 +16,6 @@ fn question_ffi(question : String, callback : (String) -> Unit) -> Unit {
     callback("")
   }
   @native.free(question_c)
-  @native.free(result_ptr)
 }
 
 ///|
